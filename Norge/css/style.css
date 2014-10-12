@@ -1,0 +1,266 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400,800&subset=latin,latin-ext);
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Droid Sans",Helvetica,Arial,sans-serif;
+}
+body {
+	background: #eee url('back.gif') fixed;
+}
+.clear {
+	clear: both;
+}
+#content {
+	width: 740px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.resumee a {
+	color: #538096;
+	text-decoration: none;
+	border-bottom: 1px solid #bbb;
+	padding-bottom: 0;
+}
+.resumee {
+
+	border-bottom: 3px #ccc solid;
+	background: white;
+	width: 740px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	box-shadow: #ddd 0 1px 6px;
+
+}
+#top,#outroduction {
+	padding: 10px 0 10px 0;
+}
+#top h2,#outroduction  h2 {
+	font-size: 20px;
+	display: block;
+	margin-left: 30px;
+	margin-bottom: 15px;
+	padding-top: 10px;
+	
+}
+
+#top p, #outroduction p {
+	color: #333;
+	font-size: 13px;
+	line-height: 185%;
+	text-align: justify;
+	margin: 5px 30px 15px;
+}
+
+#top p,#top h2 {
+	padding-right: 250px;
+	
+}
+#top {
+	background: white url('../intro/09.jpg') no-repeat 100% 0;
+}
+#outroduction p, #outroduction h2
+{
+	padding-right: 140px;
+}
+
+#outroduction {
+	background: white url('cat.jpg') no-repeat 100% 100%;
+	padding-bottom: 15px;
+}
+.photo {
+
+	width: 150px;
+	border-right: 1px #ccc solid;
+	float: left;
+	}
+
+.photo a.frame {
+	display: block;
+	border: 0;
+	width:79px;
+	height:146px;
+	margin-left: 35px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	overflow: hidden;
+
+}
+
+.resumee-content {
+	
+	float: left;
+	width: 545px;
+	border-left: 1px #ccc solid;
+	position: relative;
+	left: -1px;
+	
+}
+
+.resumee a:hover {
+	color: #444;
+}
+.resumee-content li,.resumee-content table td,.resumee-content p {
+	font-size: 12px;
+	color: #333;
+	line-height: 166%;
+	text-align: justify;
+
+	}
+.resumee-content h2,.resumee-content h3{
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+
+.resumee-content table,.resumee-content ul {
+	margin-bottom: 40px;
+}
+.resumee-content td,.resumee-content li {
+	padding-bottom: 4px;
+}
+.resumee-content h2 {
+	font-size: 28px;
+	margin-top: 30px;
+	letter-spacing: -2px;
+}	
+
+.resumee-content h3 {
+	font-size: 14px;
+}	
+
+.resumee-content li {
+	margin-left: 30px;
+	list-style: none;
+}
+.resumee-content td {
+	vertical-align: text-top;
+}
+.resumee-content td.title{
+
+	width: 130px;
+	text-align: right;
+	color: #999;
+	padding-right: 20px;
+}
+ul.side-menu {
+
+
+	margin-left: 0;
+	margin-bottom: 0;
+
+}
+.side-menu li {
+	padding-bottom: 0;
+	list-style: none;
+	margin-left: 0;
+}
+.side-menu li a {
+	display: block;
+	color: #666;
+	text-decoration: none;
+	font-size: 12px;
+	padding: 8px 15px 8px 36px;
+	text-align: left;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+	
+}
+
+.side-menu li a {
+	background-repeat: no-repeat;
+	background-position: 9px 5px;
+	background-color: #ececec;
+	border: 0;
+	
+	}
+.side-menu li.pdf a {
+	background-image: url('floppy.gif');
+}
+.side-menu li.mail a {
+	background-image: url('mailing.gif');
+}
+.side-menu li.facebook a {
+	background-image: url('world.gif');
+}
+.side-menu li.photos a {
+	background-image: url('photo.gif');
+}
+.side-menu a:hover {
+	color: white;
+	background-color: #aaa;
+}
+
+a.top-button  {
+	display: block;
+	padding: 7px 0;
+	text-align: center;
+	width: 100px;
+	color: #333;
+	background: white;
+	float: right;
+	position: relative;
+	top: 20px;
+	left: 20px;
+	border-radius: 5px;
+	border: 1px #bbb solid;
+	text-shadow: white 0 1px 0px;
+	font-weight: bold;
+	font-size: 11px;
+	box-shadow: inset #ddd 0 -15px 20px, #eee 0 2px 3px;
+	font-variant: small-caps;
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+}
+a:active.top-button {
+		padding: 8px 0 6px;
+		background: #eee;
+}
+a:hover.top-button {
+
+	border-color: #999;
+	color: black;
+	box-shadow: inset #ddd 0 -15px 20px, #eee 0 2px 3px,#ccc 0 0 3px;
+
+
+}
+
+p.copy {
+	text-align: center;
+	font-size: 12px;
+	color: #aaa;
+	text-shadow: white 0 1px 0;
+	margin-bottom: 15px;
+}
+
+p.copy a {
+background-repeat: no-repeat;
+background-position: 5px 4px;
+padding: 3px 5px 3px 30px;
+text-decoration: none;
+border-radius: 2px;
+margin: 0 3px;
+color: #444;
+
+}
+
+p.copy a.lang-no {
+	background-image: url('no.png');
+}
+p.copy a.lang-pl {
+	background-image: url('pl.png');
+}
+p.copy a.lang-en {
+	background-image: url('gb.png');
+}
+
+p.copy a.active,p.copy a:hover {
+	background-color: #eee;
+	color: #222;
+	background-color: white;
+	border-bottom: 1px #ccc solid;
+	}

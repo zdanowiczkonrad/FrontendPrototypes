@@ -1,0 +1,266 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #170401;
+}
+body,input,textarea,select {
+	font-family: "Droid Sans",Arial,sans-serif;
+	color: #333;
+}
+
+.clear {
+	clear: both;
+}
+#container {
+	width: 950px;
+	background: white;
+	margin: 0 auto 20px;
+	border-radius: 6px;
+	border-bottom: 5px #ccc solid;
+}
+
+#top {
+	display: block;
+	width: 731px;
+	height: 138px;
+	overflow: hidden;
+	text-indent: -999px;
+	background: url('gfx/spiewnik.jpg') no-repeat 0 0;
+	margin:0 auto;
+}
+
+#navigation {
+	width: 700px;
+	float: right;
+	padding: 10px 10px 10px 0;
+	background: white;
+	border-radius: 10px;
+	}
+#navigation ul.mainnav li {
+	float: left;
+	display: block;
+	height: 80px;
+	overflow: hidden;
+}
+
+#navigation ul.mainnav {
+	background: #999999;
+	height: 80px;
+	box-shadow: inset #737373 0 -11px 30px;
+	border-bottom: 3px #555 solid;
+	display: block;
+	position: relative;
+	z-index: 1;
+	border-radius: 4px;
+
+}
+
+#navigation ul.mainnav li  a{
+	display: block;
+	overflow: hidden;
+	height: 80px;
+	width: 110px;
+	color: white;
+	text-shadow: black 0 0 4px;
+	text-decoration: none;
+	font-size: 12px;
+	text-align: center;
+
+	padding-top: 54px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-image: url('gfx/icons.png');
+}
+a.icon_glowna {background-position: 50% 15px;}
+a.icon_komentarze{background-position: 50% -85px;}
+a.icon_dodaj {background-position: 50% -185px;}
+a.icon_pdf {background-position: 50% -285px;}
+a.icon_linki {background-position: 50% -385px;}
+a.icon_wyloguj {background-position: 50% -465px;}
+
+#navigation ul.mainnav li.right {
+	float: right;
+}
+
+#navigation ul a:hover {
+	background-color: #777;
+	box-shadow: inset 0 -80px 40px #555;
+	
+}
+
+
+span.letters {
+	display: block;
+	background: #595959;
+	box-shadow: inset 0 -10px 10px #333;
+	height: 28px;
+	float: right;
+	border-radius: 5px;
+	position: relative;
+	top: -3px;
+	z-index: 0;
+}
+
+span.letters a {
+	color: white;
+	text-decoration: none;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-shadow: #333 -1px -1px 1px;
+	padding: 7px 7px 7px;
+	display: block;
+	font-weight: bold;
+	float: left;
+}
+span.letters a:hover {
+	background-color: #333;
+}
+#sidebar {
+	width: 220px;
+	float: left;
+	background: white;
+	padding: 10px 10px 0 10px;
+	border-radius: 10px;
+}
+#sidebar .menubox, #sidebar #searchbox {
+	margin-bottom: 10px;
+}
+#sidebar #searchbox {
+	background: #DFDFDF;
+	padding: 10px;
+	box-shadow: inset #ccc 0 -10px 20px;
+		border-bottom: 1px #bbb solid;
+	font-size: 12px;
+	color: #444;
+}
+
+#sidebar #searchbox input.text {
+	border: 0;
+	background: white url('gfx/szukaj.gif') no-repeat 99% 50%;
+	padding: 8px 25px 8px 10px;
+	font-size: 12px;
+	display: block;
+	width: 165px;
+	border-radius: 3px;
+	box-shadow: #ccc 2px 1px 1px;
+	margin-bottom: 10px;
+	color: #999;
+}
+	
+#sidebar #searchbox input:focus.text {
+		color: #444;
+}
+
+#sidebar input#input_include_texts {
+	margin: 0 5px;
+}
+#sidebar #searchbox input.submit {
+	display: none;
+}
+#sidebar .menubox h3 {
+	display: block;
+	color: white;
+	font-weight: bold;
+	font-size: 21px;
+	letter-spacing: -1px;
+	padding: 8px 5px;
+	text-shadow: #595F66 1px 1px 0;
+	background: #7093CD;
+	border-bottom: 3px #5D5D75 solid;
+	box-shadow: inset #76829F 0 -13px 20px;
+}
+
+#sidebar .menubox#wykonawcy h3 {
+	background: #CE6F6F;
+	border-bottom: 3px #886161 solid;
+	box-shadow: inset #AE8282 0 -13px 20px;	
+}
+#sidebar .menubox#kategoria h3 {	
+	background: #7093CD;
+	border-bottom: 3px #5D5D75 solid;
+	box-shadow: inset #76829F 0 -13px 20px;
+}
+#sidebar .menubox ul {
+	background: #DFDFDF;
+	box-shadow: inset #bbb 0 0 20px;
+		border-bottom: 1px #bbb solid;
+}
+#sidebar .menubox ul li {
+	list-style: none;
+	
+}
+#sidebar .menubox ul li a {
+	color: #555;
+	text-decoration: none;
+	text-shadow: white 0 1px 1px;
+	display: block;
+	padding: 10px 15px;
+	letter-spacing: -1px;
+	text-align: right;
+}
+
+#sidebar .menubox ul li a:hover {
+	background: #646464;
+	box-shadow: inset #4E4E4E 0 0 20px;
+	color: white;
+	text-shadow:  #646464 0 0 0;
+}
+#sidebar .menubox ul li a:hover:after {
+	content: " ";
+	background: url('gfx/dziubek.png') no-repeat 0 0;
+	float: right;
+	display: block;
+	overflow: hidden;
+	width: 10px;
+	height: 21px;
+	margin-right: -25px;
+	text-indent: -999px;
+}
+
+#content h2 {
+	font-size: 27px;
+	color: black;
+	letter-spacing: -1px;
+	margin-bottom: 15px;
+	}
+
+#content h2 a {
+	color: black;
+	font-weight: normal;
+}
+
+#content .song p {
+	font-size: 15px;
+	color: #444;
+	line-height: 170%;
+	}
+	
+#content .song p strong {
+	padding: 2px 4px;
+	background: #eee;
+	border-radius: 5px;
+	margin: 0 5px;
+}	
+
+#content .song span.subinfo {
+	color: #666;
+	font-size: 11px;
+	margin-top: 20px;
+	display: block;
+	background: #eee;
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px #aaa solid;
+	border-color: #ddd white white #ddd;
+}
+
+#content {
+	margin-left: 280px;
+	padding-top: 150px;
+	display: block;
+	padding-bottom: 40px;
+	margin-right: 40px;
+}

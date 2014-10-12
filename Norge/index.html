@@ -1,0 +1,253 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/style.css"/>
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Dominika Balcer & Konrad Zdanowicz - online résumé</title>
+	
+	<meta name="title" content="Dominika Balcer & Konrad Zdanowicz - online résumé">
+	<meta name="description" content="students are looking for a summer job - painting, cleaning, helping, physical job, hotels, gardens, plantation, farms, working with fishes" />	
+	<meta name="author" content="Dominika Balcer & Konrad Zdanowicz" />
+	<meta name="Copyright" content="Copyright DB & KZ 2012" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+	</script>
+	<script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
+			$("#top").click(function(){
+				var randomNum = Math.ceil(Math.random()*9);
+				var background="url('intro/0"+randomNum+".jpg')"
+				$("#top").css("background-image",background);
+		
+			});
+			$("#top").click();
+			$("a#example1").fancybox();
+			$("a[rel=zdjecia_dominika],a[rel=zdjecia_konrad]").fancybox({
+				'transitionIn'		: 'elastic',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Photo ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+		$('#dominika-scroll,#konrad-scroll,.top-button,.slide-button').click(function() {
+		   var elementClicked = $(this).attr("href");
+		   var destination = $(elementClicked).offset().top;
+		   $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-10}, 600 );
+		   return false;
+		});
+		});
+	</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30681446-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+
+
+<body>
+
+	<div id="content">
+	<p class="copy" style="text-align: right;">language <a href="#top" class="lang-en active">english</a> <a href="index_no.html" class="lang-no">norske</a> <a href="index_pl.html" class="lang-pl">polski</a></p>
+	<div class="resumee" id="top">
+		<h2>Hello.</h2>
+		<p>We are a couple of students from <a href="https://www.google.com/search?tbm=isch&hl=en&source=hp&biw=1280&bih=770&q=wroclaw&gbv=2&oq=wroclaw&aq=f&aqi=g10&aql=1&gs_l=img.3..0l10.1587l2562l0l2683l7l6l0l1l1l0l122l239l0j2l2l0.efis.1." target="_blank">Wroclaw</a>, one of the largest and definitely most beautiful <a href="http://maps.google.com/maps?q=poland&hl=en&sll=37.0625,-95.677068&sspn=46.36116,79.013672&hnear=Poland&t=m&z=6" target="_blank">Polish</a> city. <a href="#dominika-resumee" id="dominika-scroll">Dominika</a> studies European literature and history with faculty of school teaching, <a href="#konrad-resumee" id="konrad-scroll">Konrad</a> studies automatics and robotics with faculty of IT and informatics – just click our names to find out more detailed information. We are planning to spend our holidays in Norway. We are taking with ourselves only some money to survive, plenty of polish food, comfortable shoes, tent for the two and the <em>Holy Bible</em> for tough moments. We will travel by hitchhiking and our dream and main goal - in case everything goes perfectly fine - is to reach the <a href="http://maps.google.com/maps?saddr=Oslo+Lufthavn,+Norge&daddr=Nordkapp,+Norway&hl=en&ll=65.658275,18.720703&spn=12.223308,39.506836&sll=37.09024,-95.361328&sspn=46.36116,79.013672&geocode=Fat8lgMd2FupACGJZjYuSsWn6A%3BFRXmPQQdBKqJASmducTYC03IRTFwVHGa0MaK9w&oq=nordkap&mra=ls&t=m&z=5" target="_blank">Nordkapp</a> or at least to see the <a href="https://www.google.com/search?hl=en&gbv=2&tbm=isch&q=lofoten&oq=lofoten&aq=f&aqi=g10&aql=1&gs_l=img.3..0l10.132704l145448l0l145523l24l21l4l0l0l0l221l1471l0j8j2l10l0.efis.1.&pws=0" target="_blank">Lofoten Island.</a></p>
+		<h2>What's the problem then?</h2>
+		<p>We realize <strong>this may be a long and expensive adventure</strong>, that is why we are looking for some essential financial sources to afford this trip. We are interested in any kind of such seasonal jobs - cleaning, gardening, painting, physical job, manual labour on farms, plantations, in hotels and so on. We are very communicative, optimistic and open-minded young students. We speak English fluently, we also know German and French on an upper-intermediate level. <strong> Our disposition is basically from the 1<sup>st</sup> July until the 1<sup>st</sup> September.</strong></p>
+	</div>
+
+		<div class="resumee">
+			<div class="photo">
+			<a rel="zdjecia_dominika" title="Dominika Balcer" href="dominika/dominika_01.jpg" class="frame"><img src="dominika_balcer_thumb.jpg"></a>
+			<a rel="zdjecia_dominika" title="Dominika Balcer" style="display: none;" href="dominika/dominika_02.jpg" class="frame"><img src="dominika_balcer_thumb.jpg"></a>
+				<ul class="side-menu">
+					<li class="pdf"><a href="CV_Dominika_Balcer.pdf">download .pdf</a></li>
+					<li class="mail"><a href="mailto:domia1407@wp.pl">mail</a></li>
+					<li class="facebook"><a href="https://www.facebook.com/profile.php?id=100001070382615" target="_blank">facebook</a></li>
+					<!--<li class="photos"><a href="#">photos</a></li>-->
+				</ul>
+			</div>		
+			<div class="resumee-content" id="dominika-resumee">
+				<a href="#top" class="top-button">go back to top</a>
+				<h2>Dominika Balcer</h2>
+				<table>
+				<tr>
+					<td class="title">date of birth</td><td class="desc">14.07.1991</td>
+				</tr>
+				<tr>
+					<td class="title">address</td><td class="desc">ul. Strumykowa 2, 62-811 Koscielna Wies</td>
+				</tr>
+				<tr>
+					<td class="title">telephone</td><td class="desc">+ 48 605 423 762</td>
+				</tr>
+				<tr>
+					<td class="title">e-mail</td><td class="desc"><a href="mailto:domia1407@wp.pl">domia1407@wp.pl</a></td>
+				</tr>
+				</table>
+			
+				<h3>Education</h3>
+				<table>
+				<tr>
+					<td class="title">2010 – 2013</td><td class="desc">Wroclaw University, Polish philology and history, faculty of school teaching Polish language and literature and history</td>
+				</tr>
+				<tr>
+					<td class="title">2007 – 2010</td><td class="desc">Kalisz Humanistic High School nr 2</td>
+				</tr>
+				</table>
+				
+				<h3>Experience</h3>
+				
+				<table>
+				<tr>
+					<td class="title">2011 – 2012</td><td class="desc">Volunteer as tutor in <em>Akademia Przyszlosci</em> - individual lessons with handful children</td>
+				</tr>
+				<tr>
+					<td class="title">2011</td><td class="desc">Shop assistant at <em>Italia</em> – cake shop & bakery - consumer service, maintaining contacts with clients, cleaning, making delivery orders etc.</td>
+				</tr>
+				<tr>
+					<td class="title">2007, 2008, 2010</td><td class="desc">Manual labourer as a garderner in greenhouse - picking up and hand-sorting tomatoes, variety of another duties</td>
+				</tr>
+				</table>
+
+				<h3>Skills</h3>
+				<ul>
+					<li>– knowledge writing and properly speaking in Polish</li>
+					<li>– knowledge of Polish and European literature and history</li>
+					<li>– knowledge and experience in methods of working with children</li>
+				</ul>
+				
+				
+				
+				<h3>Additional skills</h3>
+				<ul>
+					<li>– knowledge of English (advanced), German (upper-intermediate)</li>
+					<li>– Driving License, Cat. B</li>
+					<li>– experience in working with children and free-time animation</li>
+					<li>– works effectively, independently; keen to learn new skills; responsibility, communicativity, good organization of work, creativity</li>
+				</ul>
+
+				<h3>Personal interests</h3>
+				<ul>
+					<li>– sport (especially volleyball, running, bike riding), travel, reading books - European contemporary, romantivism and positivism; cooking, music, movies, volunteer work</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+
+
+			<div class="resumee">
+			<div class="photo">
+	<a rel="zdjecia_konrad" title="Konrad Zdanowicz" href="konrad/konrad_01.jpg" class="frame"><img src="konrad_zdanowicz_thumb.jpg"></a>
+			<a rel="zdjecia_konrad" title="Konrad Zdanowicz" style="display: none;" href="konrad/konrad_02.jpg" class="frame"><img src="konrad_balcer_thumb.jpg"></a>
+						<ul class="side-menu">
+					<li class="pdf"><a href="CV_Konrad_Zdanowicz.pdf">download .pdf</a></li>
+					<li class="mail"><a href="mailto:zdanowicz.konrad@gmail.com">mail</a></li>
+					<li class="facebook"><a href="https://www.facebook.com/zdanowicz.konrad" target="_blank">facebook</a></li>
+					<!--<li class="photos"><a href="#">photos</a></li>-->
+				</ul>
+			</div>		
+
+			<div class="resumee-content" id="konrad-resumee">
+			<a href="#top" class="top-button">go back to top</a>
+				<h2>Konrad Zdanowicz</h2>
+				<table>
+				<tr>
+					<td class="title">date of birth</td><td class="desc">17.12.1990</td>
+				</tr>
+				<tr>
+					<td class="title">address</td><td class="desc">ul. Zizki 5/2, 50-203 Wroclaw, Poland</td>
+				</tr>
+				<tr>
+					<td class="title">telephone</td><td class="desc">+ 48 606 616 346</td>
+				</tr>
+				<tr>
+					<td class="title">e-mail</td><td class="desc"><a href="mailto:zdanowicz.konrad@gmail.com">zdanowicz.konrad@gmail.com</a></td>
+				</tr>
+				</table>
+			
+				<h3>Education</h3>
+				<table>
+				<tr>
+					<td class="title">2009 – 2012</td><td class="desc">Wroclaw University of Technology, Automatics and Robotics of Electronics, faculty of Information Technology in Automatics</td>
+				</tr>
+				<tr>
+					<td class="title">2006 – 2009</td><td class="desc">Wroclaw Bilingual High School nr 14</td>
+				</tr>
+				</table>
+				
+				<h3>Experience</h3>
+				
+				<table>
+				<tr>
+					<td class="title">2011 – 2012</td><td class="desc">Volunteer work for <em>Redemptor</em> and <em>Donum Students’ Organization</em> – organizing events, free – time animation, designing graphics, posters, websites</td>
+				</tr>
+				<tr>
+					<td class="title">2009 – 2012</td><td class="desc">IT specialist at <em>PolGer</em> – international advertising, bureau-supply and printing company – webdesigning, graphics and computers administration, maintaining contact with clients, paper work and machines service</td>
+				</tr>
+				<tr>
+					<td class="title">2008, 2009, 2010</td><td class="desc">Casual summer work as a manual labourer – painting, cleaning, housing etc.</td>
+					</tr>
+					<tr>
+					<td class="title">2003 – 2009</td><td class="desc">Freelance as a webdeveloper - designing and coding from sketch complete applications, websites and scripts for private clients and corporations</td>
+				</tr>
+				</table>
+
+				<h3>Skills</h3>
+				<ul>
+					<li>– knowledge of most advanced webdeveloping and programming techniques including HTML5, SQL, OOP, C#, Matlab</li>
+					<li>– knowledge of automatics, robotics, controlling, electronics and AI problems, experience in programming PLC-s and microcontrollers</li>
+					<li>– advanced skill and taste in web graphics – both raster and vector; experience in layout, interface, typography design</li>
+				</ul>
+				
+				
+				
+				<h3>Additional skills</h3>
+				<ul>
+					<li>– knowledge of English (advanced), German (upper-intermediate), French (intermediate)</li>
+					<li>– Driving License, Cat. B, experience in working in direct sales as a orders deliverer</li>
+					<li>– experience in working with children and free-time animation</li>
+					<li>– common touch, leadership, flexibility; ability to learn fast and work in a team</li>
+				</ul>
+
+				<h3>Personal interests</h3>
+				<ul>
+					<li>– volleyball, acrobatics, basketball, swimming, climbing, skiing, hitch-hiking, travel, music (especially electronic, jazz, blues, classical, experimental), playing guitar and piano, independent film, Christian religion, volunteer work, art & design, IT, software</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+	</div>
+		
+		<div class="resumee" id="outroduction">
+		<h2>wow...</h2>
+		<p>You made it to the end. <strong>The cat it amused.</strong> Still not interested? Don't worry. You can try going <a href="#top" class="slide-button">back to top</a>, share this page with everyone who could help us in any way or just e-mail us with warm words of support! :-)</p>
+
+		</div>
+	
+</div>
+<p class="copy">copyrights &copy; 2012 Dominika Balcer & Konrad Zdanowicz</p>
+
+</body>
+
+</html>

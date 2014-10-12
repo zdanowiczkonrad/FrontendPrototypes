@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	font-family: Helvetica,Verdana,Arial,Tahoma,sans-serif;
+} 
+
+fieldset {
+	border: 0;
+	background: url('gfx/kos.gif') white no-repeat 80% 50%;
+	height: 400px;
+	width: 500px;
+	margin: 50px auto 0;
+}
+
+table {
+	display: block;
+	width: 300px;
+	margin: 140px auto;
+}
+
+label {
+	font-size: 11px;
+	color: #666;
+	text-align: right;
+	float: right;
+	margin-right: 10px;
+}
+
+input#login, input#pass {
+	width: 200px;
+	border: 1px #CCCCCC solid;
+	background: #F4F4F4;
+	font-size: 11px;
+	padding: 3px;
+}
+
+
+input#login:focus, input#pass:focus {
+	width: 200px;
+	border: 1px #B6B6B6 solid;
+	background: white;
+}
+
+input#submit {
+	font-size: 11px;
+	width: 75px;
+	background: #6EADC0;
+	color: white;
+	border: 1px #6EADC0 solid;
+
+	padding: 4px;
+	margin: 20px auto;
+	display: block;
+	
+}
+i
+input#submit:active {
+	background: #FFDC71;
+	border-color: #FFDC71;
+}
+
+strong {
+	font-size: 11px;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	padding: 3px;
+	color: red;
+}

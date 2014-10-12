@@ -1,0 +1,21 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jsquared.js"></script>
+<table id="squared" border="1">
+</table>
+<script language="javascript">
+$('#squared').jSquared( { 
+        onRowAdded  : function(textCell, text, dataCells) { 
+                // you may perform your ajax calls here
+                // just a stub
+                dataCells.each( function() { $(this).html('<input type="text" value="'+text+'">'); } ); 
+        },
+        onColumnAdded  : function(textCell, text, dataCells) { 
+                // you may perform your ajax calls here
+                // just a stub
+                dataCells.each( function() { $(this).html('<input type="text" value="'+text+'">'); } ); 
+        },
+} );
+</script>
