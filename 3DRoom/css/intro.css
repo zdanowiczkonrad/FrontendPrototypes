@@ -1,0 +1,307 @@
+/* RESET */
+
+* {
+	margin: 0;
+	padding: 0;
+
+	}
+
+.clear
+  {display: inline-block;}   
+.clear:after
+  {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+* html .clear
+  {height: 1%;}
+.clear
+  {display: block;}
+  
+ 
+ 
+ 
+/* STYLE ****************/
+
+body {
+   background: #E7F3FC url('gfx/body_background.jpg') 0 0 repeat-x;
+   text-align: center;
+   font-family: Arial,Tahoma,Verdana,Helvetica,sans-serif;
+   margin: 15px 0;
+}
+
+#intro_container {
+	width: 923px;
+	margin: 0 auto;
+	text-align: left;
+	background: url('gfx/intro_border.png') no-repeat  0 239px;
+}
+
+#intro_top {
+   width: 923px;
+   height: 239px;
+   background: url('gfx/intro_top.png') no-repeat;
+   overflow: hidden;
+}
+
+#intro_top h1,#intro_top h2,#intro_top h3,#intro_top p {
+	font: 20px Arial;
+	text-indent: -999px;
+}
+
+#intro_top ul {
+
+	width: 120px;
+	position: absolute;
+	top: 68px;
+	margin-left: 723px;
+
+}
+
+#intro_top li {
+	width: 120px;
+	height: 30px;
+
+	margin-bottom: 30px;
+	list-style:none;
+	overflow: hidden;
+}
+
+#intro_top li a {
+	display: block;
+	width: 120px;
+	height: 30px;
+	text-indent: -999px;
+	background: url('js/images/pixel.gif');
+}
+#intro_room {
+    position: relative;
+	left: 12px;
+    overflow: hidden;
+    width: 900px;
+    height: 240px;
+}
+
+#intro_room .preloader {
+	background: white;
+    width: 900px;
+    height: 240px;
+	text-align: center;
+	z-index: 1;
+}
+
+#intro_room .preloader .box {
+	background: white url('gfx/ajax_loader.gif') 50% 36% no-repeat;
+	width: 300px;
+	height: 100px;
+	font-size: 11px;
+	font-family: Tahoma,Verdana,sans-serif;
+	margin:80px auto 0 auto;
+}
+
+#intro_room .preloader .box .progress {
+	border: 1px #ccc solid;
+	height: 14px;
+	margin-top: 55px;
+	width: 300px;
+	text-align: left;
+	overflow: hidden;
+}
+
+#intro_room .preloader .box .progress strong {
+	display: block;
+	text-indent: 5px;
+	font-weight: normal;
+	height: 20px;
+	position: relative;
+	top: -20px;
+	font-weight: bold;
+}
+#intro_room .preloader .box .progress strong code {
+	font-weight: normal;
+
+}
+#intro_room .preloader .box .progress .progressbar {
+	height: 20px;
+	overflow: hidden;
+	width: 0px;
+	background: #eee;
+
+}
+
+#intro_room .preloader a {
+	color: #333;
+	font: 11px Tahoma,Verdana,Helvetica,Arial,sans-serif;
+	
+}
+/************* layers ************/
+#intro_room div {height: 240px;}
+
+#intro_room div.l_1 {width:920px;}
+#intro_room div.l_2{width:1100px;}
+#intro_room div.l_3 {width:1000px;}
+#intro_room div.l_4 {width:1040px;}
+#intro_room div.l_5 {width:1020px;}
+#intro_room div.l_6 {width:1030px;}
+#intro_room div.l_7 {width:1010px;}
+#intro_room div.l_8 {width:1015px;}
+#intro_room div.l_9 {width:1020px;}
+#intro_room div.l_10 {width:1060px;}
+#intro_room div.l_11 {width:1080px;}
+#intro_room div.l_12 {width:1100px;}
+#intro_room div.l_13 {width:1080px;}
+#intro_room div.l_14 {width:1130px;}
+
+#intro_room div img {position: relative;}
+img {top: ; left: ;}
+#intro_room div.l_1 img {top: 30px ; left: 130px ;}
+#intro_room div.l_2 img {top: 149px; left: 260px;}
+#intro_room div.l_3 img {top: ; left: ;}
+#intro_room div.l_4 img {top: 20px; left: 144px;}
+#intro_room div.l_5 img {top: 90px; left: 840px;}
+#intro_room div.l_6 img {top: 100px;	left: 790px}
+#intro_room div.l_7 img {top: 120px; 	left: 55px}
+#intro_room div.l_8 img {top: 180px; 	left: 192px}
+#intro_room div.l_9 img {top: 93px; 	left: 360px}
+#intro_room div.l_10 img {top: 103px; 	left: 593px}
+#intro_room div.l_11 img {top: 41px; 	left: 530px}
+#intro_room div.l_12 img {top: 3px;	left: 220px;}
+#intro_room div.l_13 img {top: 98px;	left: 0px;}
+#intro_room div.l_14 img {top: 0px;	left: 105px;}
+
+/*
+			<div class="l_01"  style="width:920px; height:240px;">	<img src="js/sprites/landscape.jpg" 	style="position: relative; top: 30px; left: 130px;" /></div>
+			<div class="l_02"  style="width:1100px; height:240px;">	<img src="js/sprites/kot.png" 			style="position: relative; top: 149px; left: 260px"/></div>
+			<div class="l_03"  style="width:1000px; height:240px;">	<img src="js/sprites/background.png" /></div>
+			<div class="l_04"  style="width:1040px; height:240px;">	<img src="js/sprites/lampytyl.png" 	style="position: relative; top: 20px; 	left: 144px	" /></div>
+			<div class="l_05"  style="width:1020px; height:240px;">	<img src="js/sprites/komputer.png" 	style="position: relative; top: 90px; 	left: 840px	" alt="Sklep internetowy"/></div>
+			<div class="l_06"  style="width:1030px; height:240px;">	<img src="js/sprites/krzeslo.png" 		style="position: relative; top: 100px;	left: 790px	" alt="us³ugi"/></div>
+			<div class="l_07"  style="width:1010px; height:240px;">	<img src="js/sprites/laminator.png" 	style="position: relative; top: 120px; 	left: 55px	" alt="laminacja, laminatory"/></div>
+			<div class="l_08"  style="width:1015px; height:240px;">	<img src="js/sprites/smietnik.png" 	style="position: relative; top: 180px; 	left: 192px	" alt=""/></div>
+			<div class="l_09"  style="width:1020px; height:240px;">	<img src="js/sprites/ploter.png" 		style="position: relative; top: 93px; 	left: 360px	" alt="druk wielkoformatowy, wycinanie, plakaty"/></div>
+			<div class="l_10"  style="width:1060px; height:240px;">	<img src="js/sprites/stol.png" 		style="position: relative; top: 103px; 	left: 593px	" alt="formaty papieru, bindowanie"/></div>
+			<div class="l_11"  style="width:1080px; height:240px;">	<img src="js/sprites/boss.png" 		style="position: relative; top: 41px; 	left: 530px	" alt="o firmie, Andrzej Bergier"/></div>
+			<div class="l_12"  style="width:1100px; height:240px;">	<img src="js/sprites/polka.png" 		style="position: relative; top: 3px;	left: 220px;" alt="handel-biuroserwis, piecz¹tki, identyfikacja"/></div>
+			<div class="l_13"  style="width:1080px; height:240px;">	<img src="js/sprites/roslinka.png" 	style="position: relative; top: 98px;	left: 0px;	" alt="PolGer we Wroc³awiu"/></div>
+			<div class="l_14"  style="width:1130px; height:240px;">	<img src="js/sprites/lampyprzod.png" 	style="position: relative; top: 0px;	left: 105px;" alt="Biuroserwis Wroc³aw"/></div>		
+
+*/
+
+
+#intro_bottom {
+    overflow: hidden;
+	height:163px;
+	background: url('gfx/intro_bottom.png') no-repeat;
+}
+
+#intro_bottom  h3 {
+
+	overflow: hidden;
+	width: 374px;
+	height: 21px;
+}
+
+#intro_bottom h3 a {
+	display: block;
+	height: 21px;
+	text-indent: -999px;
+}
+
+#intro_bottom #intro_sitemap {
+
+	width: 500px;
+
+	overflow: hidden;
+	height: 138px;
+	float: left;
+	position: relative;
+	top: 15px;
+	left: 60px;
+	}
+
+#intro_bottom #intro_sitemap ul {
+	float: left;
+	background: url('gfx/intro_tree.gif') no-repeat 0 0;
+	width: 143px;
+	padding-top: 5px;
+	font-size: 1px;
+}
+
+#intro_bottom #intro_sitemap ul li {
+	background: url('gfx/intro_tree_nest.gif') no-repeat 5px 6px;
+	padding-left: 17px;
+	height: 20px;
+	list-style: none;
+	overflow: hidden;
+}
+
+#intro_bottom #intro_sitemap a {
+	font: 11px Arial,sans-serif;
+	color: #616982;
+	text-decoration: none;
+	
+}
+
+#intro_bottom  #intro_sitemap a span {
+	display: block;
+	height: 1px;
+	width: 0;
+	margin: 0;
+	overflow: hidden;
+	background:#ccc;
+
+}
+
+
+#intro_bottom #intro_infobox {
+	float: right;
+	width: 420px;
+
+	height: 200px;
+}
+
+#intro_bottom #intro_infobox #intro_enterbutton {
+	display: block;
+	background: url('gfx/intro_button_enter.png') no-repeat 0 -35px;
+	height: 35px;
+	width: 260px;
+	position: relative;
+	left: 64px;
+	overflow: hidden;
+	text-indent: -999px;
+}
+
+#intro_bottom #intro_infobox #intro_enterbutton span {
+	display: block;
+	background: url('gfx/intro_button_enter.png') no-repeat 0 0;
+	height: 35px;
+	width: 260px;
+}
+#intro_footer {
+
+		width: 853px;
+		
+		margin: 10px 34px;
+		
+		
+}
+
+#intro_footer p {
+
+	color: #92A3B8;
+	font: 9px Tahoma,Verdana,Helvetica,sans-serif;
+
+	text-align: justify;
+	width: 700px;
+	float: left;
+	}
+
+#intro_footer a.intro_kontakt {
+	background: url('gfx/button_webmaster.gif') no-repeat 0 0;
+	float: right;
+	width: 146px;
+	height: 24px;
+	overflow: hidden;
+	text-indent: -999px;
+}
+
+#intro_footer a.intro_kontakt:hover {
+	background-position: 0 -24px;
+}
